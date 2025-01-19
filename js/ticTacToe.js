@@ -449,7 +449,9 @@ function displayController() {
                         displayWinner();
                         return;
                     }
-                    game.botplay("o")
+                    if (game.player2 === "Bot") {
+                        game.botplay("o")
+                    }
                     render();
                 }
 
