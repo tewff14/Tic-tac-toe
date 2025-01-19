@@ -1,0 +1,77 @@
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+
+.playerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 1000px;
+    background-color: antiquewhite;
+
+    border-radius: 30px;
+}
+
+.playerContainer form {
+    width: 600px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.playerContainer form input {
+    width: 500px;
+    height: 50px;
+
+    padding: 10px;
+
+    font-size: 24px;
+    border-radius: 30px;
+}
+
+.playerContainer form label {
+    font-family: "Roboto", serif;
+    font-size: 64px;
+}
+
+.playerContainer form button {
+    width: 200px;
+    height: 80px;
+    font-size: 36px;
+    border-radius: 30px;
+    border: none;
+}
+
+.playerContainer form button:hover {
+    border: 2px solid black;
+}
+
+#cross {
+    font-size: 48px;
+    color: #F95454;
+}
+
+#radio {
+    font-size: 48px;
+    color: #77CDFF;
+}
