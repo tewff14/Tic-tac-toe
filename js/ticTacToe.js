@@ -194,6 +194,7 @@ function createGameboard(p1, p2) {
             return false;
         }
 
+        winner = "";
         isEnd = true;
         return true;
     }
@@ -413,6 +414,8 @@ function displayController() {
             dialogMsg.textContent = game.player1;
         } else if (game.getWinner() === "o") {
             dialogMsg.textContent = game.player2;
+        } else {
+            dialogMsg.textContent = "Tie";
         }
 
 
