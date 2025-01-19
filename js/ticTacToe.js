@@ -443,16 +443,27 @@ function displayController() {
             slots[i][j].addEventListener("click", () => {
                 if (game.play(i, j)) {
                     render();
+
                     if (game.winCheck() || game.isTie()) {
                         console.log(game.winCheck());
                         console.log(game.isTie());
                         displayWinner();
                         return;
                     }
+
                     if (game.player2 === "Bot") {
                         game.botplay("o")
+                        render();
+                        if (game.winCheck() || game.isTie()) {
+                            console.log(game.winCheck());
+                            console.log(game.isTie());
+                            displayWinner();
+                            return;
+                        }
                     }
-                    render();
+
+
+
                 }
 
 
